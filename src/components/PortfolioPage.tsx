@@ -47,6 +47,7 @@ const PortfolioPage = () => {
                             <Link href="/portfolio" className="text-gray-600 hover:text-gray-800">Portfolio</Link>
                             <Link href="/designers" className="text-gray-600 hover:text-gray-800">Designers</Link>
                             <Link href="/contact" className="text-gray-600 hover:text-gray-800">Contact</Link>
+                            <Link href="/about" className="text-gray-600 hover:text-gray-800">About</Link>
                         </div>
                     </div>
                 </nav>
