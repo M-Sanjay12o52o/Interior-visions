@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { Search, Filter } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const projects = [
     { id: 1, name: "Modern Loft Renovation", type: "Residential", date: "2023-11-15", description: "A spacious loft transformed into a minimalist haven." },
@@ -82,7 +83,7 @@ const PortfolioPage = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {filteredProjects.map(project => (
                         <div key={project.id} className="bg-white rounded-lg shadow-md overflow-hidden">
-                            <img
+                            <Image
                                 src={`/api/placeholder/400/300?text=${encodeURIComponent(project.name)}`}
                                 alt={project.name}
                                 className="w-full h-48 object-cover"

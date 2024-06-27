@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const AboutPage = () => {
     return (
@@ -40,22 +41,22 @@ const AboutPage = () => {
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-                            <img src="/api/placeholder/150/150?text=F" alt="Founder" className="w-24 h-24 rounded-full mx-auto mb-4" />
+                            <Image src="/api/placeholder/150/150?text=F" alt="Founder" className="w-24 h-24 rounded-full mx-auto mb-4" />
                             <h3 className="text-xl font-semibold text-center mb-2">Jane Doe</h3>
                             <p className="text-gray-600 text-center mb-2">Founder & CEO</p>
                             <p className="text-gray-600 text-center">Jane has over 20 years of experience in the design industry and a passion for creating beautiful, functional spaces.</p>
                         </div>
                         <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-                            <img src="/api/placeholder/150/150?text=C" alt="Chief Designer" className="w-24 h-24 rounded-full mx-auto mb-4" />
+                            <Image src="/api/placeholder/150/150?text=C" alt="Chief Designer" className="w-24 h-24 rounded-full mx-auto mb-4" />
                             <h3 className="text-xl font-semibold text-center mb-2">John Smith</h3>
                             <p className="text-gray-600 text-center mb-2">Chief Designer</p>
-                            <p className="text-gray-600 text-center">John's innovative designs and attention to detail have won numerous awards and accolades.</p>
+                            <p className="text-gray-600 text-center">John&apos;s innovative designs and attention to detail have won numerous awards and accolades.</p>
                         </div>
                         <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-                            <img src="/api/placeholder/150/150?text=D" alt="Designer" className="w-24 h-24 rounded-full mx-auto mb-4" />
+                            <Image src="/api/placeholder/150/150?text=D" alt="Designer" className="w-24 h-24 rounded-full mx-auto mb-4" />
                             <h3 className="text-xl font-semibold text-center mb-2">Emily Johnson</h3>
                             <p className="text-gray-600 text-center mb-2">Senior Designer</p>
-                            <p className="text-gray-600 text-center">Emily's designs are known for their elegance and sophistication, making her a favorite among clients.</p>
+                            <p className="text-gray-600 text-center">Emily&apos;s designs are known for their elegance and sophistication, making her a favorite among clients.</p>
                         </div>
                     </div>
                 </section>

@@ -3,6 +3,7 @@
 import React from 'react';
 import { ChevronRight, Star } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const designers = [
     { name: 'Emma Thompson', specialty: 'Modern Minimalism', rating: 4.9 },
@@ -31,7 +32,7 @@ const HomePage = () => {
 
             <main>
                 <section className="relative h-96">
-                    <img src="/api/placeholder/1200/400" alt="Interior design showcase" className="w-full h-full object-cover" />
+                    <Image src="/api/placeholder/1200/400" alt="Interior design showcase" className="w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                         <div className="text-center">
                             <h1 className="text-4xl font-bold text-white mb-4">Transform Your Space</h1>
@@ -48,7 +49,7 @@ const HomePage = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {designers.map((designer, index) => (
                             <div key={index} className="bg-white rounded-lg shadow-md p-6">
-                                <img src={`/api/placeholder/150/150?text=${designer.name.charAt(0)}`} alt={designer.name} className="w-24 h-24 rounded-full mx-auto mb-4" />
+                                <Image src={`/api/placeholder/150/150?text=${designer.name.charAt(0)}`} alt={designer.name} className="w-24 h-24 rounded-full mx-auto mb-4" />
                                 <h3 className="text-xl font-semibold text-center mb-2">{designer.name}</h3>
                                 <p className="text-gray-600 text-center mb-2">{designer.specialty}</p>
                                 <div className="flex justify-center items-center">

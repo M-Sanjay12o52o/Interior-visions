@@ -141,7 +141,7 @@ const ServicesPage = () => {
                         </div>
                         <div>
                             <h3 className="text-xl font-semibold mb-2">Can you work within my budget?</h3>
-                            <p className="text-gray-600">Yes, we pride ourselves on creating beautiful spaces within our clients' budgets. We'll work with you to prioritize spending and find creative solutions.</p>
+                            <p className="text-gray-600">Yes, we pride ourselves on creating beautiful spaces within our clients&apos; budgets. We&apos;ll work with you to prioritize spending and find creative solutions.</p>
                         </div>
                     </div>
                 </section>

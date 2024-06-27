@@ -1,6 +1,7 @@
 import React from 'react';
 import { Star, Award, Bookmark } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const designers = [
     {
@@ -84,7 +85,7 @@ const DesignersPage = () => {
                     {designers.map((designer) => (
                         <div key={designer.id} className="bg-white rounded-lg shadow-md overflow-hidden">
                             <div className="p-6">
-                                <img src={`/api/placeholder/200/200?text=${designer.name.charAt(0)}`} alt={designer.name} className="w-32 h-32 rounded-full mx-auto mb-4" />
+                                <Image src={`/api/placeholder/200/200?text=${designer.name.charAt(0)}`} alt={designer.name} className="w-32 h-32 rounded-full mx-auto mb-4" />
                                 <h2 className="text-2xl font-semibold mb-2 text-center">{designer.name}</h2>
                                 <p className="text-indigo-600 font-medium mb-2 text-center">{designer.specialty}</p>
                                 <div className="flex items-center justify-center mb-4">
