@@ -1,14 +1,14 @@
-import HomePage from '@/components/HomePage'
 import { FC } from 'react'
+import ContactPage from '../../components/Contact'
 
 interface pageProps {
 
 }
 
 const page: FC<pageProps> = ({ }) => {
-  return <div>
-    <HomePage />
-  </div>
+    return <div>
+        <ContactPage />
+    </div>
 }
 
 export default page

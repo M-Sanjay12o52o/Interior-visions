@@ -1,4 +1,4 @@
-import HomePage from '@/components/HomePage'
+import ServicesPage from '@/components/ServicesPage'
 import { FC } from 'react'
 
 interface pageProps {
@@ -6,9 +6,9 @@ interface pageProps {
 }
 
 const page: FC<pageProps> = ({ }) => {
-  return <div>
-    <HomePage />
-  </div>
+    return <div>
+        <ServicesPage />
+    </div>
 }
 
 export default page
